@@ -1,0 +1,24 @@
+categories:
+  - category: "Data platform"
+    content: |
+      Core building blocks for data workloads, storage, and runtime infrastructure.
+    subcategories:
+      - subcategory: "Components"
+        content: |
+          Components that power Dapla Lab.
+
+      - subcategory: "Services"
+        content: |
+          Some of the development and analytics services available to teams.
+
+      - subcategory: "Auth"
+        content: |
+          Identity and access management components used across Dapla.
+
+  - category: "Application platform"
+    content: |
+      Platform capabilities for deploying and operating applications.
+    subcategories:
+      - subcategory: "Components"
+        content: |
+          Core runtime and deployment platform services.

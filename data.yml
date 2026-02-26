@@ -1,0 +1,69 @@
+categories:
+  - name: Data platform
+    subcategories:
+      - name: Components
+        items:
+          - name: Dapla Lab / Onyxia
+            homepage_url: https://www.onyxia.sh/
+            repo_url: https://github.com/InseeFrLab/onyxia
+            description: Managed data science workbench environment based on Onyxia.
+            logo: onyxia.svg
+          - name: Oauth2proxy
+            homepage_url: https://oauth2-proxy.github.io/oauth2-proxy/
+            description: OAuth2/OIDC authentication proxy for upstream services.
+            logo: oauth2proxy.svg
+          - name: Kubernetes
+            homepage_url: https://kubernetes.io/
+            description: Container orchestration platform for workloads and services.
+            logo: kubernetes.svg
+          - name: Google Cloud Storage FUSE
+            homepage_url: https://cloud.google.com/storage/docs/cloud-storage-fuse/overview
+            description: FUSE adapter for mounting Cloud Storage buckets as filesystems.
+            logo: gcp.svg
+          - name: Ssbucketeer
+            homepage_url: https://github.com/statisticsnorway/ssbucketeer/
+            description: Annotation-based operator for GCS bucket mounting (via Google Cloud Storage FUSE) in Kubernetes applications.
+            logo: ssb.svg
+
+      - name: Services
+        items:
+          - name: Jupyter
+            homepage_url: https://jupyter.org/
+            description: Interactive notebooks and compute environments for analysis.
+            logo: jupyter.png
+          - name: Code-server (VS Code)
+            homepage_url: https://github.com/coder/code-server
+            description: Browser-accessible VS Code for cloud and remote development.
+            logo: vscode.png
+          - name: JDemetra
+            homepage_url: https://github.com/jdemetra
+            description: Seasonal adjustment and time-series analysis tooling.
+            logo: jdemetra.png
+          - name: Self developed applications
+            homepage_url: https://manual.dapla.ssb.no/statistikkere/datadoc-editor.html
+            description: Internal applications built and maintained by product teams.
+            logo: ssb.svg
+
+      - name: Auth
+        items:
+          - name: Keycloak
+            homepage_url: https://www.keycloak.org/
+            description: Identity and access management with OIDC and SAML support.
+            logo: keycloak.png
+          - name: Keycloakerator
+            homepage_url: https://github.com/statisticsnorway/keycloakerator
+            description: Dynamic Keycloak client provisioning through Kubernetes CRDs
+            logo: ssb.svg
+          - name: LabID
+            homepage_url: https://github.com/statisticsnorway/labid
+            description: Signed Kubernetes JWT token exchange service.
+            logo: ssb.svg
+
+  - name: Application platform
+    subcategories:
+      - name: Components
+        items:
+          - name: Nais
+            homepage_url: https://nais.no/
+            description: Application platform developed by the Norwegian Labour and Welfare Administration for deploying and operating services.
+            logo: nais.svg
