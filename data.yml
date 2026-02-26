@@ -24,6 +24,14 @@ categories:
             homepage_url: https://github.com/statisticsnorway/ssbucketeer/
             description: Annotation-based operator for GCS bucket mounting (via Google Cloud Storage FUSE) in Kubernetes applications.
             logo: ssb.svg
+          - name: PxWeb
+            homepage_url: https://github.com/PxTools/PxWeb2
+            description: PxWeb is an open-source software for publishing and browsing statistical tables online.
+            logo: pxtools.png
+          - name: PxWebApi
+            homepage_url: https://github.com/PxTools/PxWebApi
+            description: Every dataset published in PxWeb automatically gets an API endpoint, enabling programmatic access and integration with R, Python, Power BI, and more.
+            logo: pxtools.png
 
       - name: Services
         items:
