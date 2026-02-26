@@ -1,0 +1,62 @@
+name: Build and deploy
+on:
+  push: main
+
+jobs:
+  build:
+    uns-on: ubuntu-latest
+    container:
+      image: ghcr.io/cncf/landscape2
+      options: --user root
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v6
+
+      - name: Install tar in container (needed for the cache)
+        run: apk add --update --no-progress tar
+
+      - name: Setup cache
+        uses: actions/cache@v5
+        with:
+          path: /tmp/landscape-cache
+          key: landscape-cache-dapla-${{ github.sha }}-${{ github.run_id }}
+          restore-keys: |
+            landscape-cache-dapla-
+
+      - name: Build landscape
+        env:
+          RUST_LOG: "landscape2=debug"
+        run: |
+          landscape2 build \
+            --settings-file ./settings.yml \
+            --guide-file ./guide.yml \
+            --data-file ./data.yml \
+            --logos-path ./logos \
+            --cache-dir /tmp/landscape-cache \
+            --output-dir /tmp/landscape
+      
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: /tmp/landscape
+          
+  deploy:
+      # Add a dependency to the build job
+      needs: build
+  
+      # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+      permissions:
+        pages: write      # to deploy to Pages
+        id-token: write   # to verify the deployment originates from an appropriate source
+  
+      # Deploy to the github-pages environment
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+  
+      runs-on: ubuntu-latest
+      steps:
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4 
