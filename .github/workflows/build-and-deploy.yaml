@@ -4,7 +4,7 @@ on:
 
 jobs:
   build:
-    uns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     container:
       image: ghcr.io/cncf/landscape2
       options: --user root
