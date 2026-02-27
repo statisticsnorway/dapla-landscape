@@ -5,16 +5,20 @@ This repository is scaffolded to run [`landscape2`](https://github.com/cncf/land
 ## Files
 
 - `data.yml`: categories, subcategories, and landscape items
-- `settings.yml`: required global settings for build output
+- `settings.yml`: global settings for build output
 - `guide.yml`: category guide content shown in the generated site
-- `logos/`: SVG logos referenced by `data.yml`
+- `logos/`: logos referenced by `data.yml`
 
-## Build
+## Contributing
 
-```bash
-LANDSCAPE2=/Users/johnksv/code/ssb/temp/landscape2/target/debug/landscape2
+```shell
+brew install cncf/landscape2/landscape2
+```
 
-$LANDSCAPE2 build \
+### Build
+
+```shell
+landscape2 build \
   --data-file ./data.yml \
   --settings-file ./settings.yml \
   --guide-file ./guide.yml \
@@ -22,10 +26,8 @@ $LANDSCAPE2 build \
   --output-dir ./build
 ```
 
-## Serve locally
+### Serve locally
 
-```bash
-LANDSCAPE2=/Users/johnksv/code/ssb/temp/landscape2/target/debug/landscape2
-
-$LANDSCAPE2 serve --landscape-dir ./build
+```shell
+landscape2 serve --landscape-dir ./build
 ```
