@@ -1,24 +1,37 @@
 categories:
   - category: "Data platform"
     content: |
-      Core building blocks for data workloads, storage, and runtime infrastructure.
+      The Data platform provides the core infrastructure for working with data across the organization.
+      It covers storage, compute, authentication, and supporting services required to build, run, and maintain production of statistics workflows at scale.
     subcategories:
       - subcategory: "Components"
         content: |
-          Components that power Dapla Lab.
+          Components that form the base layer of the platform. Together they provide compute
+          environments, storage integration, and runtime capabilities for data processing and development.
 
       - subcategory: "Services"
         content: |
-          Some of the development and analytics services available to teams.
+          User-facing services that support data analysis and development nedded in statistical production.
+          These services enable teams to interact with data, develop workflows, and perform analysis efficiently.
+          Both cloud native open source services and in house developed services are provided to the user.
 
       - subcategory: "Auth"
         content: |
-          Identity and access management components used across Dapla.
+          Identity and access management services that control authentication and authorization across the platform. These components ensure secure and consistent access to data and services.
 
   - category: "Application platform"
     content: |
-      Platform capabilities for deploying and operating applications.
+      The goal of the application platform is to provide mechanisms for deploying, running, and operating applications in a controlled and scalable environment for our teams, such that they can conentrate on whats important for them: building the right applications.
+
+      It abstracts underlying infrastructure and offers standardized ways to manage applications.
     subcategories:
       - subcategory: "Components"
         content: |
-          Core runtime and deployment platform services.
+          Core platform infrastructure used to deploy, run, and manage applications.
+
+
+  - category: "Dissemination platform"
+    content: |
+      The Dissemination platform provides capabilities for publishing, sharing, and accessing statistics.
+      It enables structured access to statistical products through web interfaces and APIs.
+      The platform ensures that data products are consistently published, discoverable, and accessible to both internal and external users.
