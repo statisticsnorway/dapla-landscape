@@ -44,6 +44,23 @@ categories:
             description: Internal applications built and maintained by product teams.
             logo: ssb.svg
 
+      - name: Metadata
+        items:
+          - name: Datadoc
+            homepage_url: https://manual.dapla.ssb.no/statistikkere/datadoc.html
+            description: Document datasets in one place and links them directly to the data.
+            logo: ssb.svg
+            repo_url: https://github.com/statisticsnorway/datadoc-editor
+          - name: Klass
+            homepage_url: https://manual.dapla.ssb.no/statistikkere/klass.html
+            description: System for documenting code systems, including classifications and code lists.
+            logo: ssb.svg
+            repo_url: https://github.com/statisticsnorway/klass
+          - name: Vardef
+            homepage_url: https://manual.dapla.ssb.no/statistikkere/vardef.html
+            description: System for documenting variables in one place for consistent reuse and maintenance.
+            logo: ssb.svg
+            repo_url: https://github.com/statisticsnorway/vardef
       - name: Auth
         items:
           - name: Keycloak
@@ -65,7 +82,9 @@ categories:
         items:
           - name: Nais
             homepage_url: https://nais.no/
-            description: Application platform developed by the Norwegian Labour and Welfare Administration for deploying and operating services.
+            description: |
+              Application platform developed by the Norwegian Labour and Welfare Administration for deploying and operating services.
+              Provides the whole value chain from deploy, run and manage applications.
             logo: nais.svg
 
   - name: Dissemination platform

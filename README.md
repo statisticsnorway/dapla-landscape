@@ -32,3 +32,5 @@ landscape2 build \
 landscape2 serve --landscape-dir ./build
 ```
 
+Site is avaiable on `<localhost>/dapla-landscape`.
+The reason for the base path is that we host the webpage on github pages.
