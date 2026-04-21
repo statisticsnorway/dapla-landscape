@@ -1,3 +1,7 @@
 foundation: Dapla
 url: https://statisticsnorway.github.io
 base_path: /dapla-landscape
+header:
+  links:
+    github: "https://github.com/statisticsnorway/dapla-landscape"
+  logo: "./logos/ssb-long.svg"
