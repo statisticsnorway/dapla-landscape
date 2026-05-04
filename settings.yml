@@ -1,6 +1,6 @@
 foundation: Dapla
-url: https://statisticsnorway.github.io
-base_path: /dapla-landscape
+url: https://landscape.dapla.ssb.no
+base_path: /
 header:
   links:
     github: "https://github.com/statisticsnorway/dapla-landscape"
